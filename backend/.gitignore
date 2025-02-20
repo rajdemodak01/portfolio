@@ -37,3 +37,12 @@ coverage/
 ### Misc ###
 .DS_Store
 Thumbs.db
+
+# TypeScript compiled files
+*.js
+*.js.map
+*.d.ts
+
+# PM2 process manager logs
+pm2.log
+pm2.pid
