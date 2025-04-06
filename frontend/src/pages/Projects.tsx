@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useState } from "react";
+import photo from "../assets/photo2.jpg"
 
 const CustomPrevArrow = (props: any) => {
   const { onClick } = props;
@@ -78,7 +79,7 @@ function Projects() {
               </svg>
             </a>
             <img
-              src="src/assets/photo2.jpg"
+              src={photo}
               alt="picture"
               className="rounded-lg w-full h-72 object-cover object-top"
             />
@@ -126,7 +127,7 @@ function Projects() {
               </svg>
             </a>
             <img
-              src="src/assets/photo2.jpg"
+              src={photo}
               alt="picture"
               className="rounded-lg w-full h-72 object-cover object-top"
             />
@@ -167,7 +168,7 @@ function Projects() {
               </svg>
             </a>
             <img
-              src="src/assets/photo2.jpg"
+              src={photo}
               alt="picture"
               className="rounded-lg w-full h-72 object-cover object-top"
             />

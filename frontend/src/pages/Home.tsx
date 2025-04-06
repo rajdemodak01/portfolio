@@ -1,5 +1,6 @@
 // import React from 'react'
 import { TypeAnimation } from "react-type-animation";
+import photo from "../assets/photo2.jpg"
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
 
           <div className="relative h-64 w-64 rounded-full overflow-hidden">
             <img
-              src="src/assets/photo2.jpg"
+              src={photo}
               alt="picture"
               className="object-cover object-top h-full w-full rounded-full transform transition-all group-hover:duration-300 duration-500 group-hover:scale-110"
             />

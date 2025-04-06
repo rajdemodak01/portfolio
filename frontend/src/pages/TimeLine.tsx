@@ -1,6 +1,8 @@
 // import React from 'react'
 
 import useTheme from "../context/Context";
+import logoBlack from "../assets/logo-black.png";
+import logoWhite from "../assets/logo-white.png";
 
 function TimeLine() {
   const { themeMode } = useTheme();
@@ -36,8 +38,8 @@ function TimeLine() {
           <img
             src={
               themeMode === "dark"
-                ? "src/assets/logo-black.png"
-                : "src/assets/logo-white.png"
+                ? logoBlack
+                : logoWhite
             }
             alt="image"
             className="size-7"
@@ -47,8 +49,8 @@ function TimeLine() {
           <img
             src={
               themeMode === "dark"
-                ? "src/assets/logo-black.png"
-                : "src/assets/logo-white.png"
+                ? logoBlack
+                : logoWhite
             }
             alt="image"
             className="size-7"
@@ -78,8 +80,8 @@ function TimeLine() {
           <img
             src={
               themeMode === "dark"
-                ? "src/assets/logo-black.png"
-                : "src/assets/logo-white.png"
+                ? logoBlack
+                : logoWhite
             }
             alt="image"
             className="size-7"
@@ -106,8 +108,8 @@ function TimeLine() {
           <img
             src={
               themeMode === "dark"
-                ? "src/assets/logo-black.png"
-                : "src/assets/logo-white.png"
+                ? logoBlack
+                : logoWhite
             }
             alt="image"
             className="size-7"
@@ -117,8 +119,8 @@ function TimeLine() {
           <img
             src={
               themeMode === "dark"
-                ? "src/assets/logo-black.png"
-                : "src/assets/logo-white.png"
+                ? logoBlack
+                : logoWhite
             }
             alt="image"
             className="size-7"

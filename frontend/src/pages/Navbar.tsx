@@ -1,25 +1,28 @@
 import { useState } from "react";
 import ThemeSwitcher from "../components/ThemeSwitcher";
 import useTheme from "../context/Context";
+import logoBlack from "../assets/logo-black.png";
+import logoWhite from "../assets/logo-white.png";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const {themeMode}=useTheme()
+  const { themeMode } = useTheme();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       const navbarHeight = 48; // Fixed navbar height
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-  
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+
       window.scrollTo({
-        top: elementPosition - navbarHeight-10, // Adjust scroll position
+        top: elementPosition - navbarHeight - 10, // Adjust scroll position
         behavior: "smooth",
       });
     }
     setIsMobileMenuOpen(false); // Close mobile menu after click
   };
-  
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
     // const mobileMenu = document.getElementById("mobileMenu");
@@ -37,7 +40,11 @@ function Navbar() {
             }}
           >
             <img
-              src={themeMode === "dark" ? "src/assets/logo-white.png" : "src/assets/logo-black.png"}
+              src={
+                themeMode === "dark"
+                  ? logoWhite
+                  : logoBlack
+              }
               alt="logo"
               className="h-8 sm:h-8"
             />
@@ -186,7 +193,7 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        <ThemeSwitcher/>
+        <ThemeSwitcher />
       </nav>
     </div>
   );
