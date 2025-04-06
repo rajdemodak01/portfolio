@@ -34,7 +34,7 @@ const CustomNextArrow = (props: any) => {
 function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0); 
 
-  const handleBeforeChange = (oldIndex: number, newIndex: number) => {
+  const handleBeforeChange = (newIndex: number) => {
     setCurrentSlide(newIndex);  
   };
   const settings = {

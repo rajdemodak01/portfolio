@@ -22,14 +22,14 @@ function Contact() {
       // const response=await fetch(`${backendUrl}/healthCheck`, {
       //   method:"GET"
       // })
-      const response = await fetch(`${backendUrl}/help`, {
+      await fetch(`${backendUrl}/help`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-      const result = await response.json();
+      // const result = await response.json();
       // console.log(result);
       setFormData({ name: "", email: "", message: "" });
       alert("Help submitted");

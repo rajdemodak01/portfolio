@@ -1,4 +1,8 @@
-import { Navbar, Home, About, Skills, Projects, Contact, TimeLine, Testimonials } from "."
+import { Navbar, Home, 
+  // About, 
+  Skills, Projects, Contact, TimeLine, 
+  // Testimonials 
+} from "."
 import  { ThemeProvider } from "./context/Context"
 
 function App() {
