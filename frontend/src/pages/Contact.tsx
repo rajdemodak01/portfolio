@@ -8,7 +8,7 @@ function Contact() {
     message: "",
   });
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
-  console.log(`Backend url: ${backendUrl}`);
+  // console.log(`Backend url: ${backendUrl}`);
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -17,7 +17,7 @@ function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log("submitted");
-    console.log(formData);
+    // console.log(formData);
     try {
       // const response=await fetch(`${backendUrl}/healthCheck`, {
       //   method:"GET"
@@ -30,7 +30,7 @@ function Contact() {
         body: JSON.stringify(formData),
       });
       const result = await response.json();
-      console.log(result);
+      // console.log(result);
       setFormData({ name: "", email: "", message: "" });
       alert("Help submitted");
     } catch (err) {
