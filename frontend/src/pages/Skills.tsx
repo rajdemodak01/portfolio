@@ -3,7 +3,7 @@ import SkillBar from "../components/SkillBar";
 
 function Skills() {
   return (
-    <div className="flex flex-col items-center dark:text-white">
+    <div className="flex flex-col items-center dark:text-white mt-5">
       <h2 className="text-2xl font-semibold mb-6">Skills</h2>
       <div className="flex justify-center items-center w-full">
         <div className="grid grid-cols-2 gap-x-10 md:w-[50%]">

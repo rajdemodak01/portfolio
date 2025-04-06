@@ -8,9 +8,18 @@ function Navbar() {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    if (element) {
+      const navbarHeight = 48; // Fixed navbar height
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+  
+      window.scrollTo({
+        top: elementPosition - navbarHeight-10, // Adjust scroll position
+        behavior: "smooth",
+      });
+    }
+    setIsMobileMenuOpen(false); // Close mobile menu after click
   };
+  
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
     // const mobileMenu = document.getElementById("mobileMenu");
@@ -20,9 +29,9 @@ function Navbar() {
     <div className="flex justify-center">
       <nav className="w-full sm:w-full lg:w-3/5 h-12 dark:bg-navbar-black bg-gray-400 rounded-b-lg flex p-2 dark:text-navbar-text-color shadow-md dark:shadow-white shadow-black">
         {/* logo */}
-        <div className="w-1/2 flex items-center pl-4 sm:pl-6">
+        <div className="w-1/2 flex items-center pl-4 sm:pl-6 cursor-pointer">
           <a
-            href="#home"
+            // href="#home"
             onClick={() => {
               scrollToSection("home");
             }}
@@ -48,7 +57,7 @@ function Navbar() {
           </li> */}
           <li className="dark:hover:text-blue-500 hover:text-white cursor-pointer flex justify-center">
             <a
-              href="#timeline"
+              // href="#timeline"
               onClick={() => {
                 scrollToSection("timeline");
               }}
@@ -58,7 +67,7 @@ function Navbar() {
           </li>
           <li className="dark:hover:text-blue-500 hover:text-white cursor-pointer flex justify-center">
             <a
-              href="#skills"
+              // href="#skills"
               onClick={() => {
                 scrollToSection("skills");
               }}
@@ -68,7 +77,7 @@ function Navbar() {
           </li>
           <li className="dark:hover:text-blue-500  hover:text-white cursor-pointer flex justify-center">
             <a
-              href="#projects"
+              // href="#projects"
               onClick={() => {
                 scrollToSection("projects");
               }}
@@ -88,7 +97,7 @@ function Navbar() {
           </li> */}
           <li className="dark:hover:text-blue-500 hover:text-white cursor-pointer flex justify-center">
             <a
-              href="#contact"
+              // href="#contact"
               onClick={() => {
                 scrollToSection("contact");
               }}
@@ -128,7 +137,7 @@ function Navbar() {
           </li> */}
           <li className="hover:text-blue-500  cursor-pointer flex justify-center">
             <a
-              href="#timeline"
+              // href="#timeline"
               onClick={() => {
                 scrollToSection("timeline");
               }}
@@ -138,7 +147,7 @@ function Navbar() {
           </li>
           <li className="hover:text-blue-500  cursor-pointer flex justify-center">
             <a
-              href="#skills"
+              // href="#skills"
               onClick={() => {
                 scrollToSection("skills");
               }}
@@ -148,7 +157,7 @@ function Navbar() {
           </li>
           <li className="hover:text-blue-500  cursor-pointer flex justify-center">
             <a
-              href="#projects"
+              // href="#projects"
               onClick={() => {
                 scrollToSection("projects");
               }}

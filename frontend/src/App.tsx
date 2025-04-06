@@ -14,7 +14,8 @@ function App() {
         {/* <div id="about" className="h-96"><About/></div> */}
         <div id="skills" className=""><Skills/></div>
         <div id="projects" className=""><Projects/></div>
-        <div id="testimonials" className=""><Testimonials/></div>
+        {/* will add testimonials later */}
+        {/* <div id="testimonials" className=""><Testimonials/></div> */}
         <div id="contact" className=""><Contact/></div>
       </div>
     </div>
