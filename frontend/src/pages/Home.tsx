@@ -1,6 +1,7 @@
 // import React from 'react'
 import { TypeAnimation } from "react-type-animation";
-import photo from "../assets/photo2.jpg"
+// import photo from "../assets/photo2.jpg"
+import photo from "../assets/photo2.webp"
 
 function Home() {
   return (
