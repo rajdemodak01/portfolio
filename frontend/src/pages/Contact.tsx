@@ -39,7 +39,7 @@ function Contact() {
   };
   return (
     <div className="flex justify-center">
-      <div className="sm:w-full md:w-5/12 lg:w-3/12 dark:text-white dark:border-white border-2 border-black rounded-lg flex-col items-center justify-center mt-10 pt-5 px-6">
+      <div className="sm:w-full md:w-5/12 lg:w-3/6 dark:text-white dark:border-white border-2 border-black rounded-lg flex-col items-center justify-center mt-10 pt-5 px-6">
         <div className="">
           <h1 className="text-center uppercase text-3xl">Get In Touch</h1>
           {/* <p className="text-center">
@@ -48,7 +48,7 @@ function Contact() {
           <div className="flex justify-center items-center gap-1">
             {/* email */}
             <div>
-            <a href= "mailto:rajgobindadham@gmail.com">
+            <a title="mail" href= "mailto:rajgobindadham@gmail.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="40px"
@@ -64,6 +64,7 @@ function Contact() {
             {/* linkedin */}
             <div>
               <a
+              title="linkedin"
                 href="https://www.linkedin.com/in/rajdemodak01/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -82,6 +83,7 @@ function Contact() {
             {/* github */}
             <div>
               <a
+                title="github"
                 href="https://github.com/rajdemodak01"
                 target="_blank"
                 rel="noopener noreferrer"

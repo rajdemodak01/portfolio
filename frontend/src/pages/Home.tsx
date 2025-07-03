@@ -98,7 +98,7 @@ function Home() {
       <div className="dark:text-white  text-black pt-4 flex justify-center items-center gap-2">
         {/* download cv */}
         <div>
-          <a href="src/assets/CV.pdf" target="blank">
+          <a title="cv" href="src/assets/CV.pdf" target="blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30px"
@@ -125,6 +125,7 @@ function Home() {
         {/* linkedin */}
         <div>
           <a
+            title="linkedin"
             href="https://www.linkedin.com/in/rajdemodak01/"
             target="_blank"
             rel="noopener noreferrer"
@@ -143,6 +144,7 @@ function Home() {
         {/* github */}
         <div>
           <a
+          title="github"
             href="https://github.com/rajdemodak01"
             target="_blank"
             rel="noopener noreferrer"
