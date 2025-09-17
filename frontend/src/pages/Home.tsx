@@ -1,7 +1,7 @@
 // import React from 'react'
 import { TypeAnimation } from "react-type-animation";
 // import photo from "../assets/photo2.jpg"
-import photo from "../assets/photo2.webp"
+import photo from "../assets/photo2.webp";
 
 function Home() {
   return (
@@ -144,7 +144,7 @@ function Home() {
         {/* github */}
         <div>
           <a
-          title="github"
+            title="github"
             href="https://github.com/rajdemodak01"
             target="_blank"
             rel="noopener noreferrer"
