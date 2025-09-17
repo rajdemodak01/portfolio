@@ -1,4 +1,3 @@
-import { useState } from "react";
 import photo from "../assets/photo2.webp";
 
 function Projects() {
